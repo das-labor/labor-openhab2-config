@@ -1,0 +1,23 @@
+Switch Couch_SW   "[%s]" {mqtt=">[mqtt:Labor/Vortragsraum/Powercommander/Couch/swt:command:*:MAP(onoff.map)]"}
+Switch Schrank_SW "[%s]" {mqtt=">[mqtt:Labor/Vortragsraum/Powercommander/Schrank/swt:command:*:MAP(onoff.map)]"}
+Switch Beamer_SW  "[%s]" {mqtt=">[mqtt:Labor/Vortragsraum/Powercommander/Beamer/swt:command:*:MAP(onoff.map)]"}
+Switch Tafel_SW   "[%s]" {mqtt=">[mqtt:Labor/Vortragsraum/Powercommander/Tafel/swt:command:*:MAP(onoff.map)]"}
+
+Number Couch   "[%d]" {mqtt=">[mqtt:Labor/Vortragsraum/Powercommander/Couch/sld:command:*:default]"}
+Number Schrank "[%d]" {mqtt=">[mqtt:Labor/Vortragsraum/Powercommander/Schrank/sld:command:*:default]"}
+Number Beamer  "[%d]" {mqtt=">[mqtt:Labor/Vortragsraum/Powercommander/Beamer/sld:command:*:default]"}
+Number Tafel   "[%d]" {mqtt=">[mqtt:Labor/Vortragsraum/Powercommander/Tafel/sld:command:*:default]"}
+
+
+Switch Neon_Door_SW  "[%s]" {mqtt=">[mqtt:Labor/Lounge/Labnode/Neon Tür/swt:command:*:MAP(onoff.map)]"}
+Switch Neon_Wall_SW  "[%s]" {mqtt=">[mqtt:Labor/Lounge/Labnode/Neon Wand/swt:command:*:MAP(onoff.map)]"}
+
+Number Neon_Door  "[%d]" {mqtt=">[mqtt:Labor/Lounge/Labnode/Neon Tür/sld:command:*:default]"}
+Number Neon_Wall  "[%d]" {mqtt=">[mqtt:Labor/Lounge/Labnode/Neon Wand/sld:command:*:default]"}
+
+Switch Spot_Door_SW1 "[%s]" {mqtt=">[mqtt:Labor/Lounge/Labnode/Spots Tür/swt:command:*:MAP(onoff.map)]"}
+Switch Spot_Wall_SW1 "[%s]" {mqtt=">[mqtt:Labor/Lounge/Labnode/Spots Wand/swt:command:*:MAP(onoff.map)]"}
+
+
+Number Vortrag_Temp "[%.2f]" {mqtt="<[mqtt:Labor/Vortragsraum/Sensoren/Schreibtisch/Temperatur:state:default]"}
+Number Vortrag_Humi "[%d]" {mqtt="<[mqtt:Labor/Vortragsraum/Sensoren/Schreibtisch/Feuchtigkeit:state:default]"}

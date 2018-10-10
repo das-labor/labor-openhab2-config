@@ -1,0 +1,32 @@
+Group    Home           "Labor"          <house>
+
+Group    Vortragsraum   "Vortragsraum"   <cinema>     (Home)
+Group    Lounge         "Lounge"         <sofa>       (Home)
+Group    Bastelraum     "Bastelraum"     <cistern>    (Home)
+Group    Kitchen        "Küche"          <kitchen>    (Home)
+Group    Keller         "Keller"         <cellar>     (Home)
+Group    Sonstiges      "Sonstiges"      <settings>   (Home)
+
+Group:Switch:OR(ON, OFF)   gLight   "Licht"   <light>   (Home)
+
+Switch   Couch_SW       "Couch"          <light>   (Vortragsraum, gLight)     {channel=""}
+Switch   Schrank_SW     "Schrank"        <light>   (Vortragsraum, gLight)     {channel=""}
+Switch   Beamer_SW      "Beamer"         <light>   (Vortragsraum, gLight)     {channel=""}
+Switch   Tafel_SW       "Tafel"          <light>   (Vortragsraum, gLight)     {channel=""}
+
+Dimmer   Couch          "Couch"          <light>   (Vortragsraum, gLight)     {channel=""}
+Dimmer   Schrank        "Schrank"        <light>   (Vortragsraum, gLight)     {channel=""}
+Dimmer   Beamer         "Beamer"         <light>   (Vortragsraum, gLight)     {channel=""}
+Dimmer   Tafel          "Tafel"          <light>   (Vortragsraum, gLight)     {channel=""}
+
+Number   Vortrag_Temp   "Temperatur [%.2f°C]"       <temperature> (Vortragsraum)  {channel=""}
+Number   Vortrag_Humi   "Luftfeuchtigkeit [%d%%]" <humidity>    (Vortragsraum)  {channel=""}
+
+Switch   Neon_Door_SW   "Neon Tür"       <light>   (Lounge, gLight)      {channel=""}
+Dimmer   Neon_Door      "Neon Tür"       <light>   (Lounge, gLight)      {channel=""}
+Switch   Neon_Wall_SW   "Neon Wand"      <light>   (Lounge, gLight)      {channel=""}
+Dimmer   Neon_Wall      "Neon Wand"      <light>   (Lounge, gLight)      {channel=""}
+
+Switch   Spot_Door_SW1 "Spot Tür 1"      <light>   (Lounge, gLight)      {channel=""}
+
+Switch   Spot_Wall_SW1 "Spot Wand 1"     <light>   (Lounge, gLight)      {channel=""}
